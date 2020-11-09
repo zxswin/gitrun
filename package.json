@@ -15,7 +15,8 @@
     "src/**/*.{js,vue}": [
       "prettier --write",
       "eslint --cache --fix",
-      "git add"
+      "git add",
+      "test"
     ]
   },
   "repository": {
