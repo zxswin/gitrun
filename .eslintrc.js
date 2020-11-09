@@ -12,6 +12,6 @@ module.exports = {
   },
   rules: {
     'no-console': 0, //禁止使用console
-    'no-eq-null': 2, //禁止对null使用==或!=运算符
+    'no-eq-null': 0, //禁止对null使用==或!=运算符
   },
 };
