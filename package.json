@@ -4,19 +4,18 @@
   "description": "git est",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"这个内容输出后在执行相关校验\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run test && lint-staged "
     }
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
       "prettier --write",
       "eslint --cache --fix",
-      "git add",
-      "test"
+      "git add"
     ]
   },
   "repository": {
